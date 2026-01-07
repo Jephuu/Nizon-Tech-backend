@@ -43,9 +43,10 @@ const authMiddleware = require('./middleware/authMiddleware');
 
 dotenv.config();
 
+
 const app = express();
 
-// Middleware
+// Middleware   
 app.use(cors({
   origin: ['https://nizon-tech-react-app.vercel.app', 'http://localhost:5174'],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
